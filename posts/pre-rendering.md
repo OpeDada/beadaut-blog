@@ -1,23 +1,37 @@
 ---
-title: 'Set up Your Course for Success With These Proven Strategy'
-date: '2021-08-28'
+title: 'Why you should use Lead Magnets'
+date: '2021-07-11'
 ---
 
-What makes some courses perform better than others? Is it the title? The content? Or the design? Read on to find out the answer. 😉
+How do you capture your audience’s attention in a world where the average human’s attention span is less than that of a fish?
 
-First, you need to know that you won’t be creating the perfect online course, at least not the first time you teach it. It takes teaching an online course a few times to improve and perfect it. Continue to experiment with new approaches, refining your teaching according to your learning objectives and the feedback you get from your students. Give yourself permission to be a student too – to learn over time. This guide will help you create a very good online course to start with. You can improve it from there!
+7 seconds!
 
-📍Set clear goals for your course: Define the objective of your course from the start and make sure it is simple and clear. This will help you simplify and fine tune your content and delivery strategy. It is imperative to have precise instructions for the expectations of all aspects of learning outcomes within each module.
+That’s all you got to grab people’s attention or lose it to their ever wondering eyes or is it minds. 😂
 
-For example – At the end of the course, I want my students to be able to…
-You can also set skills goals such as networking, developing design skills, or improve creative writing skills, etc. Whatever fits into your course goal.
+Whichever it is, you get the point, right? 👍🏼
 
-📍Develop a highly valuable and less cumbersome course content: Resist the urge to cram your course with everything you know about the topic. Too much information will only weigh your students down and discourage them from completing the course. Include only content that are absolutely necessary to achieve the goals of your course.
+If you have ever tried to promote your course on social media, then you know how tough it is to get people to take a look at what you’re offering.
 
-📍Employ effective and engaging delivery methods: There’s need to ensure that your course has a balance of visual, audio and practical formats so that students are engaged and provided with an optimum learning experience.
+While you can try your best to do everything, sometimes it helps to focus on one aspect of digital marketing and really give it your attention. It might seem daunting to do so, but if you want quality leads that help your business grow, then it might be worth investing some time.
 
-Aim for less content overall, but use a variety of methods to deliver your course content, while laying emphasis on case studies, experiential learning and other forms of engaging tasks.
+The best way to do this is to use a very good lead magnet.
 
-Incorporate these strategies into your courses and see and an exponential change in your students’ experience as well as learning outcomes.
+What exactly is a lead magnet?
 
-Remember to have fun with your course.
+It is an incentive you offer to people in exchange for their e-mail addresses. You provide valuable and useful content that your audience finds so irresistible that they just have to get it.
+
+Why do you need their email address? Email marketing, of course!
+
+Lead magnets are designed to be a give-and-take, which is why it’s crucial to design something that actually provides a user with something valuable they would not find elsewhere. The give and take nature of using a lead magnet establishes a relationship from the get-go.
+
+Also, rather than spending time nurturing leads that might not be as relevant, the lead magnet identifies which users are truly interested in your courses or coaching. They would not have accepted your offer if it didn’t apply to them. The content of the lead magnet becomes the jumping-off point from which you then have a chance to continue nurturing the lead.
+
+So, you see why you definitely need to use Lead Magnets in promoting your offers online and even offline? Now, if you’re not sure how to choose the right lead magnet, then you cannot afford to miss next week’s article because we’ll be talking about how to choose the right lead magnet for your offer.
+
+If you have not yet whitelisted this email address, you should do that now, so you don’t miss any other emails from me.
+
+Have a lovely weekend.
+
+Talk Soon,
+Joshua
