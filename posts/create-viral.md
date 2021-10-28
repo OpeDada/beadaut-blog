@@ -2,6 +2,7 @@
 title: 'Create Viral Posts With These Secrets'
 intro: 'Open ended questions are great for driving social media engagement because they open the floor for thought sharing and conversation.'
 author: 'Joshua Owoyemi'
+image: '/images/bead-create-viral.jpeg'
 date: '2021-07-03'
 ---
 

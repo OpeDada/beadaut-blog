@@ -2,7 +2,7 @@
 title: 'Set up Your Course for Success With These Proven Strategy'
 intro: 'What makes some courses perform better than others? Is it the title? The content? Or the design?'
 author: 'Joshua Owoyemi'
-image: 'images/bead-set-up.jpeg'
+image: '/images/bead-set-up.jpeg'
 date: '2021-08-28'
 ---
 
