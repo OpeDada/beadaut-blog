@@ -1,7 +1,13 @@
 .header-group {
-
+  display: block;
   justify-content: space-between;
   background: #FFFFFF;
+  margin-top: 1rem;
+  padding: 0 2rem;
+
+  a {
+    font-weight: bold;
+  }
 }
 
 .header-group .navbar-collapse {

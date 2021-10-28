@@ -1,0 +1,28 @@
+.banner {
+  background-color: #1A41BF;
+  height: 240px;
+  // height: 34vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+
+  h1{
+    color: #e6ba6f;
+    text-align: center;
+    font-size: 48px;
+
+  }
+}
+
+.banner-text {
+    color: "#e6ba6f";
+    text-align: "center"
+  }
+
+
+.blog-list {
+  display: flex;
+  list-style-type: none;
+}
