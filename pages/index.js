@@ -3,7 +3,6 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.scss'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
-import Header from '../components/header'
 import Date from '../components/date'
 
 export async function getStaticProps() {
@@ -22,18 +21,24 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-        <Header />
+        <section>
+          <h1>Broaden Your Knowledge, Broaden Your Horizon. </h1>
+          </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg}>Latest from the Blog</h2>
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
+          {allPostsData.map(({ id, date, title, intro, image }) => (
           <li className={utilStyles.listItem} key={id}>
+            <img src={image} alt="" />
             <Link href={`/posts/${id}`}>
               <a>{title}</a>
             </Link>
             <br />
+              <a>{intro}</a>
+            <br />
             <small className={utilStyles.lightText}>
               <Date dateString={date} />
+
             </small>
           </li>
           ))}
