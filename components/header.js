@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
-import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 
@@ -8,9 +7,10 @@ export default class Header extends Component {
   render() {
     return (
       <div className="header-group">
-        <Navbar bg="light" expand="lg">
-          <Container>
-            <Navbar.Brand href="#home">Beadaut Blogs</Navbar.Brand>
+        <Navbar expand="lg">
+            <Navbar.Brand href="#home">Beadaut Blogs </Navbar.Brand>
+            <br />
+            <p>Curated posts and updates from Beadaut</p>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="">
@@ -25,7 +25,6 @@ export default class Header extends Component {
                 </Link>
               </Nav>
             </Navbar.Collapse>
-          </Container>
         </Navbar>
     </div>
     )
