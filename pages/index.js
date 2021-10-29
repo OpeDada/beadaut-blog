@@ -1,20 +1,30 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
-import { getSortedPostsData } from '../lib/posts'
+import { getSortedPostsData, getAboutData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
 import Image from 'next/image'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
+  let aboutData;
+  try {
+
+    aboutData = await getAboutData()
+  } catch (error) {
+    aboutData = {
+      id:0,
+      contentHtml:"Loading...",
+    }
+  }
   return {
     props: {
-      allPostsData
+      allPostsData, aboutData
     }
   }
 }
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsData, aboutData }) {
   return (
     <div>
     <Layout home>
@@ -54,6 +64,23 @@ export default function Home({ allPostsData }) {
               </li>
               ))}
             </div>
+          </section>
+          <section className="about-section">
+                {/* <p>{aboutData.contentHtml}</p> */}
+                {/* Tolu Owoyemi */}
+                <div>
+                <div className="about-content" dangerouslySetInnerHTML={{ __html: aboutData.contentHtml }} />
+                </div>
+                <div className="white-card">
+                  <div className="white-content">
+                  <h2>Start your creator journey on the Beadaut learning platform!</h2>
+                  <p>Share your knowledge and broaden your horizon. Gain unlimited access to great online courses.</p>
+                  <Link href={"https://app.beadaut.com/app/courses"}>
+                  <a target="_blank"><button>GO TO APP</button></a>
+                </Link>
+
+                  </div>
+                  </div>
           </section>
     </Layout>
     </div>

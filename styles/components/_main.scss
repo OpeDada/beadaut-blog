@@ -10,7 +10,6 @@
     color: #FFAD42;
     text-align: center;
     font-size: 48px;
-
   }
 }
 
@@ -19,32 +18,9 @@
     text-align: "center"
   }
 
-
-.blog-list {
-  list-style-type: none;
-  display: grid;
-  grid-gap: 16px;
-  grid-template-columns: 1fr 1fr 1fr;
-  // display: flex;
-  // justify-content: space-between;
-
-h2 {
-  color: #000000;
-  font-size: 1.2em;
-}
-a {
-  text-decoration: none;
-
-}
-p {
-      font-size: .8em;
-      margin: 0.5em 0;
-}
-}
-
 .main-blog-list {
   padding: 2rem 4rem;
-  margin-bottom: 0;
+  margin-bottom: 6rem;
   margin-top: 0;
 }
 
@@ -52,10 +28,82 @@ p {
   margin-top: 4rem;
   margin-bottom: 2rem;
 
-
   h5 {
   font-size: 24px;
   font-weight: 700;
   color: #2754e7;
+  }
+}
+
+.blog-list {
+  list-style-type: none;
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  h2 {
+    color: #000000;
+    font-size: 1.2em;
+    margin-top: 0.5rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    font-size: .8em;
+    margin: 0.5em 0;
+  }
+}
+
+.about-section {
+  background-color: #1A41BF;
+  padding: 8rem 0 24rem 0;
+}
+
+.about-content {
+  max-width: 30.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.25em;
+}
+
+.about-content::first-letter {
+  color: #FFAD42;
+  font-weight: bold;
+  margin: 4px 2px 8px 0;
+  float: left;
+  font-size: 100px;
+  line-height: 35px;
+  padding-top: 16px;
+  padding-right: 8px;
+}
+
+.white-card{
+  background-color: #ffffff;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.white-content {
+  width: 30rem;
+  text-align: center;
+  margin: 0 auto;
+
+  h2{
+    padding: 4rem 0 1.5rem 0;
+    color: #2754e7;
+    font-size: 2.5rem;
+  }
+
+  button {
+    margin: 2rem 0 4rem 0;
   }
 }
