@@ -1,15 +1,13 @@
 .banner {
   background-color: #1A41BF;
-  height: 240px;
-  // height: 34vh;
+  height: 280px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 4rem;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 
   h1{
-    color: #e6ba6f;
+    color: #FFAD42;
     text-align: center;
     font-size: 48px;
 
@@ -23,6 +21,41 @@
 
 
 .blog-list {
-  display: flex;
   list-style-type: none;
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr;
+  // display: flex;
+  // justify-content: space-between;
+
+h2 {
+  color: #000000;
+  font-size: 1.2em;
+}
+a {
+  text-decoration: none;
+
+}
+p {
+      font-size: .8em;
+      margin: 0.5em 0;
+}
+}
+
+.main-blog-list {
+  padding: 2rem 4rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.latest-blogs {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+
+
+  h5 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2754e7;
+  }
 }

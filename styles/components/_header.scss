@@ -1,15 +1,31 @@
 .header-group {
-  display: block;
-  justify-content: space-between;
   background: #FFFFFF;
   margin-top: 1rem;
   padding: 0 2rem;
+}
+
+
+.header-titles {
+  // align-items: baseline;
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: flex-start;
+  //   margin: -1rem 0 0 -2.4rem;
 
   a {
     font-weight: bold;
   }
+
+  p {
+    color: #6d6d6d;
+  }
 }
 
-.header-group .navbar-collapse {
+.site-description {
+    color: #6d6d6d;
+}
+
+
+.site-header .navbar-collapse {
   flex-grow: 0;
 }

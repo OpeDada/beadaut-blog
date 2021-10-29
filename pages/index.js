@@ -28,31 +28,32 @@ export default function Home({ allPostsData }) {
           </h1>
         </section>
         <section className="main-blog-list">
-          <h2 className="latest-blogs">Latest from the Blog</h2>
-            <ul className="blog-list">
+          <div className="latest-blogs">
+          <h5>Latest from the Blog</h5>
+          </div>
+            <div className="blog-list">
               {allPostsData.map(({ id, date, title, intro, image }) => (
               <li className="" key={id}>
                 <Image
                 priority
                 src={image}
                 className=""
-                height={144}
-                width={144}
                 alt=""
+                layout="responsive"
+                objectFit="cover"
+                width={6}
+                height={4}
                 />
-                <br />
                 <Link href={`/posts/${id}`}>
-                  <a>{title}</a>
+                  <a><h2>{title}</h2></a>
                 </Link>
-                <br />
-                  <a>{intro}</a>
-                <br />
-                <small className="">
-                  <Date dateString={date} />
+                <p>{intro}</p>
+                <small>
+                  <p><Date dateString={date} /></p>
                 </small>
               </li>
               ))}
-            </ul>
+            </div>
           </section>
     </Layout>
     </div>
