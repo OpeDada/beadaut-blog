@@ -4,6 +4,7 @@ import { getSortedPostsData, getAboutData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
 import Image from 'next/image'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -81,7 +82,7 @@ export default function Home({ allPostsData, aboutData }) {
               <h3>Share this:</h3>
               <div>
                 <ul>
-                  <li><i class="fab fa-twitter"></i>Twitter</li>
+                  <li><FontAwesomeIcon icon="check-square" />Twitter</li>
                   <li><i class="fab fa-facebook"></i>Facebook</li>
                 </ul>
               </div>
