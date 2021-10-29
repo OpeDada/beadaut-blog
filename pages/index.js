@@ -27,20 +27,17 @@ export async function getStaticProps() {
 export default function Home({ allPostsData, aboutData }) {
   return (
     <div>
-    <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
-        <section className="banner">
-          <h1>
-          Broaden Your Knowledge,
-          <br /> Broaden Your Horizon.
-          </h1>
-        </section>
-        <section className="main-blog-list">
-          <div className="latest-blogs">
-          <h5>Latest from the Blog</h5>
-          </div>
+      <Layout home>
+        <Head>
+          <title>{siteTitle}</title>
+        </Head>
+          <section className="banner">
+            <h1>Broaden Your Knowledge,<br /> Broaden Your Horizon.</h1>
+          </section>
+          <section className="main-blog-list">
+            <div className="latest-blogs">
+              <h5>Latest from the Blog</h5>
+            </div>
             <div className="blog-list">
               {allPostsData.map(({ id, date, title, intro, image }) => (
               <li className="" key={id}>
@@ -66,21 +63,29 @@ export default function Home({ allPostsData, aboutData }) {
             </div>
           </section>
           <section className="about-section">
-                {/* <p>{aboutData.contentHtml}</p> */}
-                {/* Tolu Owoyemi */}
-                <div>
-                <div className="about-content" dangerouslySetInnerHTML={{ __html: aboutData.contentHtml }} />
-                </div>
-                <div className="white-card">
-                  <div className="white-content">
-                  <h2>Start your creator journey on the Beadaut learning platform!</h2>
-                  <p>Share your knowledge and broaden your horizon. Gain unlimited access to great online courses.</p>
-                  <Link href={"https://app.beadaut.com/app/courses"}>
-                  <a target="_blank"><button>GO TO APP</button></a>
-                </Link>
-
+            <div>
+              <div className="about-content" dangerouslySetInnerHTML={{ __html: aboutData.contentHtml }} />
+            </div>
+            <div className="white-card">
+              <div className="white-content">
+                <h2>Start your creator journey on the Beadaut learning platform!</h2>
+                <p>Share your knowledge and broaden your horizon. Gain unlimited access to great online courses.</p>
+                  <div className="button">
+                    <Link href={"https://app.beadaut.com/app/courses"}>
+                      <a target="_blank">GO TO APP</a>
+                    </Link>
                   </div>
-                  </div>
+              </div>
+            </div>
+            <div>
+              <h3>Share this:</h3>
+              <div>
+                <ul>
+                  <li><i class="fab fa-twitter"></i>Twitter</li>
+                  <li><i class="fab fa-facebook"></i>Facebook</li>
+                </ul>
+              </div>
+            </div>
           </section>
     </Layout>
     </div>

@@ -103,7 +103,21 @@
     font-size: 2.5rem;
   }
 
-  button {
-    margin: 2rem 0 4rem 0;
-  }
+
 }
+
+.button{
+  margin: 2rem auto 5rem;
+  background-color: transparent;
+  color: #1a41bf;
+  padding: 14px;
+  border: 2px solid;
+  width: 145px;
+
+  a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #1a41bf;
+    font-weight: 500;
+  }
+  }
