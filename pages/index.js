@@ -66,6 +66,7 @@ export default function Home({ allPostsData, aboutData }) {
             </div>
           </section>
           <section className="about-section">
+            <div class="divider div-transparent div-dot"></div>
             <div>
               <div className="about-content" dangerouslySetInnerHTML={{ __html: aboutData.contentHtml }} />
             </div>
@@ -84,43 +85,60 @@ export default function Home({ allPostsData, aboutData }) {
               <div className="social-section">
                 <h1>Share this:</h1>
                 <div className="socials">
-                  <button className="social-button"><FontAwesomeIcon icon={faTwitter} width="16"/> Twitter</button>
-                  <button className="social-button"><FontAwesomeIcon icon={faFacebook} width="16"/> Facebook</button>
+                  <Link href={"https://twitter.com/beadautedtech"}>
+                    <a target="_blank" className="social-button"><FontAwesomeIcon icon={faTwitter} width="16" /> Twitter</a>
+                  </Link>
+                  <Link href={"https://www.facebook.com/beadautedtech"}>
+                    <a target="_blank" className="social-button" target="_blank"><FontAwesomeIcon icon={faFacebook} width="16" className="pb-1"/> Facebook</a>
+                  </Link>
                 </div>
               </div>
             </div>
           </section>
-            <div className="footer">
-            <div className="footer-top">
-              <div className="footer-links">
-                  <Nav>
-                    <Link href={"/posts-list/posts"}>
-                      <a className="nav-link">Blogs</a>
-                    </Link>
-                    <Link href={"https://www.beadaut.com/"}>
-                      <a className="nav-link" target="_blank">About</a>
-                    </Link>
-                    <Link href="/">
-                      <a className="nav-link" target="_blank">Updates</a>
-                    </Link>
-                  </Nav>
-              </div>
-                <div className="footer-socials">
-                  <Link href={"https://www.facebook.com/beadautedtech"}>
-                      <a className="nav-link" target="_blank"><FontAwesomeIcon icon={faFacebook} width="24"/></a>
-                    </Link>
-                  <Link href={"https://twitter.com/beadautedtech"}>
-                      <a className="nav-link" target="_blank"><FontAwesomeIcon icon={faTwitter} width="24"/></a>
-                    </Link>
-                  <Link href={"https://www.instagram.com/beadautedtech/"}>
-                      <a className="nav-link" target="_blank"><FontAwesomeIcon icon={faInstagram} width="24"/></a>
-                    </Link>
-                  {/* <li className="icon-button"><FontAwesomeIcon icon={faFacebook} width="16"/></li>
-                  <li className="icon-button"><FontAwesomeIcon icon={faTwitter} width="16"/></li>
-                  <li className="icon-button"><FontAwesomeIcon icon={faInstagram} width="16"/></li> */}
-              </div>
-            </div>
-            </div>
+            <section className="footer">
+                <div className="footer-top">
+                  <div className="footer-links">
+                      <Nav>
+                        <Link href={"/posts-list/posts"}>
+                          <a className="nav-link">Blogs</a>
+                        </Link>
+                        <Link href={"https://www.beadaut.com/"}>
+                          <a className="nav-link" target="_blank">About</a>
+                        </Link>
+                        <Link href="/">
+                          <a className="nav-link" target="_blank">Updates</a>
+                        </Link>
+                      </Nav>
+                    </div>
+                    <div className="footer-socials">
+                      <Link href={"https://www.facebook.com/beadautedtech"}>
+                          <a className="nav-link" target="_blank"><FontAwesomeIcon icon={faFacebook} width="24"/></a>
+                        </Link>
+                      <Link href={"https://twitter.com/beadautedtech"}>
+                          <a className="nav-link" target="_blank"><FontAwesomeIcon icon={faTwitter} width="24"/></a>
+                        </Link>
+                      <Link href={"https://www.instagram.com/beadautedtech/"}>
+                          <a className="nav-link" target="_blank"><FontAwesomeIcon icon={faInstagram} width="24"/></a>
+                        </Link>
+                    </div>
+                </div>
+                <div className="footer-recent-posts">
+                  <h2>Recent Posts</h2>
+                    {allPostsData.map(({ id, title }) => (
+                    <li className="" key={id}>
+                      <Link href={`/posts/${id}`}>
+                        <a>{title}</a>
+                      </Link>
+                    </li>
+                    ))}
+                </div>
+                <div className="footer-copyright">
+                  <p>© 2021 Beadaut Blogs</p>
+                  <Link href={"/"}>
+                    <span class="">To the top ↑</span>
+                  </Link>
+                </div>
+            </section>
     </Layout>
     </div>
   )
