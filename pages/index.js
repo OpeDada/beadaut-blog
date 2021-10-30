@@ -107,13 +107,13 @@ export default function Home({ allPostsData, aboutData }) {
               </div>
                 <div className="footer-socials">
                   <Link href={"https://www.facebook.com/beadautedtech"}>
-                      <a className="nav-link" target="_blank"><FontAwesomeIcon icon={faFacebook} width="16"/></a>
+                      <a className="nav-link" target="_blank"><FontAwesomeIcon icon={faFacebook} width="24"/></a>
                     </Link>
-                  <Link href={"https://www.facebook.com/beadautedtech"}>
-                      <a className="nav-link" target="_blank"><FontAwesomeIcon icon={faTwitter} width="16"/></a>
+                  <Link href={"https://twitter.com/beadautedtech"}>
+                      <a className="nav-link" target="_blank"><FontAwesomeIcon icon={faTwitter} width="24"/></a>
                     </Link>
-                  <Link href={"https://www.facebook.com/beadautedtech"}>
-                      <a className="nav-link" target="_blank"><FontAwesomeIcon icon={faInstagram} width="16"/></a>
+                  <Link href={"https://www.instagram.com/beadautedtech/"}>
+                      <a className="nav-link" target="_blank"><FontAwesomeIcon icon={faInstagram} width="24"/></a>
                     </Link>
                   {/* <li className="icon-button"><FontAwesomeIcon icon={faFacebook} width="16"/></li>
                   <li className="icon-button"><FontAwesomeIcon icon={faTwitter} width="16"/></li>
