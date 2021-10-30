@@ -2,9 +2,11 @@ import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import { getSortedPostsData, getAboutData } from '../lib/posts'
 import Link from 'next/link'
+import Nav from 'react-bootstrap/Nav'
 import Date from '../components/date'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram, faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -71,7 +73,7 @@ export default function Home({ allPostsData, aboutData }) {
               <div className="white-content">
                 <h2>Start your creator journey on the Beadaut learning platform!</h2>
                 <p>Share your knowledge and broaden your horizon. Gain unlimited access to great online courses.</p>
-                  <div className="button">
+                  <div className="app-button">
                     <Link href={"https://app.beadaut.com/app/courses"}>
                       <a target="_blank">GO TO APP</a>
                     </Link>
@@ -79,15 +81,46 @@ export default function Home({ allPostsData, aboutData }) {
               </div>
             </div>
             <div>
-              <h3>Share this:</h3>
-              <div>
-                <ul>
-                  <li><FontAwesomeIcon icon="check-square" />Twitter</li>
-                  <li><i class="fab fa-facebook"></i>Facebook</li>
-                </ul>
+              <div className="social-section">
+                <h1>Share this:</h1>
+                <div className="socials">
+                  <button className="social-button"><FontAwesomeIcon icon={faTwitter} width="16"/> Twitter</button>
+                  <button className="social-button"><FontAwesomeIcon icon={faFacebook} width="16"/> Facebook</button>
+                </div>
               </div>
             </div>
           </section>
+            <div className="footer">
+            <div className="footer-top">
+              <div className="footer-links">
+                  <Nav>
+                    <Link href={"/posts-list/posts"}>
+                      <a className="nav-link">Blogs</a>
+                    </Link>
+                    <Link href={"https://www.beadaut.com/"}>
+                      <a className="nav-link" target="_blank">About</a>
+                    </Link>
+                    <Link href="/">
+                      <a className="nav-link" target="_blank">Updates</a>
+                    </Link>
+                  </Nav>
+              </div>
+                <div className="footer-socials">
+                  <Link href={"https://www.facebook.com/beadautedtech"}>
+                      <a className="nav-link" target="_blank"><FontAwesomeIcon icon={faFacebook} width="16"/></a>
+                    </Link>
+                  <Link href={"https://www.facebook.com/beadautedtech"}>
+                      <a className="nav-link" target="_blank"><FontAwesomeIcon icon={faTwitter} width="16"/></a>
+                    </Link>
+                  <Link href={"https://www.facebook.com/beadautedtech"}>
+                      <a className="nav-link" target="_blank"><FontAwesomeIcon icon={faInstagram} width="16"/></a>
+                    </Link>
+                  {/* <li className="icon-button"><FontAwesomeIcon icon={faFacebook} width="16"/></li>
+                  <li className="icon-button"><FontAwesomeIcon icon={faTwitter} width="16"/></li>
+                  <li className="icon-button"><FontAwesomeIcon icon={faInstagram} width="16"/></li> */}
+              </div>
+            </div>
+            </div>
     </Layout>
     </div>
   )
