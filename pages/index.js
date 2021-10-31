@@ -77,7 +77,7 @@ export default function Home({ allPostsData, aboutData }) {
           </div>
         </section>
         <section className="about-section">
-          <div class="divider div-transparent div-dot"></div>
+          <div className="divider div-transparent div-dot"></div>
           <div>
             <div
               className="about-content"
@@ -173,7 +173,7 @@ export default function Home({ allPostsData, aboutData }) {
           <div className="footer-copyright">
             <p>© 2021 Beadaut Blogs</p>
             <Link href={"/"}>
-              <span class="">To the top ↑</span>
+              <span className="">To the top ↑</span>
             </Link>
           </div>
         </section>
