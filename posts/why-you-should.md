@@ -1,9 +1,9 @@
 ---
-title: 'Why you should use Lead Magnets'
-intro: 'How do you capture your audience’s attention in a world where the average human’s attention span is less than that of a fish?'
-author: 'Joshua Owoyemi'
-image: '/images/bead-why-you.jpeg'
-date: '2021-07-11'
+title: "Why you should use Lead Magnets"
+intro: "How do you capture your audience’s attention in a world where the average human’s attention span is less than that of a fish?"
+author: "Joshua Owoyemi"
+image: "/images/bead-why-you.jpeg"
+date: "2021-07-11"
 ---
 
 How do you capture your audience’s attention in a world where the average human’s attention span is less than that of a fish?
