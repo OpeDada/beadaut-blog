@@ -43,7 +43,7 @@ export default function Home({ allPostsData, aboutData }) {
             </div>
             <div className="blog-list">
               {allPostsData.map(({ id, date, title, intro, image }) => (
-              <li className="" key={id}>
+              <li className="blog-topics" key={id}>
                 <Image
                 priority
                 src={image}
