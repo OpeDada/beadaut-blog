@@ -32,3 +32,29 @@ h1,h2,h3 {
 //   max-width: 100%;
 //   display: block;
 // }
+
+@media screen and (max-width: 700px) {
+  .blog-list {
+    display: block;
+  }
+
+  .footer-links {
+    display: block;
+  }
+
+  .about-content {
+    padding: 0 2rem;
+  }
+  .white-content {
+    padding: 0 2rem;
+  }
+
+  .social-section {
+    padding-left: 90px;
+  }
+
+  .blog-topics {
+    margin-bottom: 2rem;
+  }
+
+}
