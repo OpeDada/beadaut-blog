@@ -1,15 +1,15 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../../components/layout'
-import utilStyles from '../../styles/utils.module.scss'
-import { getSortedPostsData } from '../../lib/posts'
+import Head from "next/head";
+import Layout, { siteTitle } from "../../components/layout";
+import utilStyles from "../../styles/utils.module.scss";
+import { getSortedPostsData } from "../../lib/posts";
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
+  const allPostsData = getSortedPostsData();
   return {
     props: {
-      allPostsData
-    }
-  }
+      allPostsData,
+    },
+  };
 }
 
 export default function Home({ allPostsData }) {
@@ -33,5 +33,5 @@ export default function Home({ allPostsData }) {
         </ul>
       </section>
     </Layout>
-  )
+  );
 }
