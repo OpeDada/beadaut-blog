@@ -2,7 +2,6 @@ import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Link from "next/link";
 
-import { getSortedPostsData } from "../lib/posts";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -11,12 +10,11 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
-  const allPostsData = getSortedPostsData();
   return (
     <section className="footer">
       <div className="footer-top">
         <div className="footer-links">
-            <Nav>
+          <Nav>
             <Link href={"/posts-list/posts"}>
               <a className="nav-link">Blogs</a>
             </Link>
@@ -49,16 +47,6 @@ export default function Footer() {
             </a>
           </Link>
         </div>
-      </div>
-      <div className="footer-recent-posts">
-        <h2>Recent Posts</h2>
-        {allPostsData.map(({ id, title }) => (
-          <li className="" key={id}>
-            <Link href={`/posts/${id}`}>
-              <a>{title}</a>
-            </Link>
-          </li>
-        ))}
       </div>
       <div className="footer-copyright">
         <p>© 2021 Beadaut Blogs</p>
