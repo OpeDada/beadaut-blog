@@ -122,6 +122,18 @@ export default function Home({ allPostsData, aboutData }) {
             </div>
           </div>
         </section>
+        <section className="footer">
+          <div className="footer-recent-posts">
+            <h2>Recent Posts</h2>
+            {allPostsData.map(({ id, title }) => (
+              <li className="" key={id}>
+                <Link href={`/posts/${id}`}>
+                  <a>{title}</a>
+                </Link>
+              </li>
+            ))}
+          </div>
+        </section>
       </Layout>
     </div>
   );
