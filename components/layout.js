@@ -1,11 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from './layout.module.scss'
-import utilStyles from '../styles/utils.module.scss'
-import Link from 'next/link'
+import Head from "next/head";
+import Image from "next/image";
+import styles from "./layout.module.scss";
+import utilStyles from "../styles/utils.module.scss";
+import Link from "next/link";
 
-const name = 'Beadaut Blogs'
-export const siteTitle = 'Beadaut Blogs'
+const name = "Beadaut Blogs";
+export const siteTitle = "Beadaut Blogs";
 
 export default function Layout({ children, home }) {
   return (
@@ -69,5 +69,5 @@ export default function Layout({ children, home }) {
         </div>
       )}
     </div>
-  )
+  );
 }
