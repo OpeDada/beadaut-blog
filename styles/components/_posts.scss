@@ -6,7 +6,7 @@
   p {
     text-align: left;
     margin: 4rem auto;
-    color: #ffffff;
+    color: var(--white);
     max-width: 58%;
   }
 }
@@ -17,11 +17,11 @@
 
   h2 {
     font-weight: 800;
-    color: #ffffff;
+    color: var(--white);
     font-size: 3.5rem;
 
     &:hover {
-      color: #ffad42;
+      color: var(--yellow);
     }
   }
 }
@@ -32,7 +32,7 @@
   margin-bottom: 2rem;
 
   a {
-    color: #ffad42;
+    color: var(--yellow);
     border-bottom: 0.1rem solid currentColor;
     font-weight: 500;
     font-size: 15px;
@@ -41,7 +41,7 @@
     text-transform: uppercase;
 
     &:hover {
-      color: #ffffff;
+      color: var(--white);
     }
   }
 }

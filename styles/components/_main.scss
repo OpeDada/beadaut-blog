@@ -1,5 +1,5 @@
 .banner {
-  background-color: #1a41bf;
+  background-color: var(--blue);
   height: 280px;
   display: flex;
   justify-content: center;
@@ -7,7 +7,7 @@
   margin-top: 0.5rem;
 
   h1 {
-    color: #ffad42;
+    color: var(--yellow);
     text-align: center;
     font-size: 48px;
   }
@@ -20,7 +20,7 @@
 
 .main-blog-list {
   padding: 2rem 2rem;
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 .latest-blogs {
@@ -54,8 +54,8 @@
 }
 
 .about-section {
-  color: #ffffff;
-  background-color: #1a41bf;
+  color: var(--white);
+  background-color: var(--blue);
   padding: 5rem 0 5rem 0;
 }
 
@@ -103,7 +103,7 @@
 }
 
 .about-content::first-letter {
-  color: #ffad42;
+  color: var(--yellow);
   font-weight: bold;
   margin: 4px 2px 8px 0;
   float: left;
@@ -114,7 +114,7 @@
 }
 
 .white-card {
-  background-color: #ffffff;
+  background-color: var(--white);
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.25em;
@@ -142,22 +142,23 @@
 .app-button {
   margin: 2rem auto 5rem;
   background-color: transparent;
-  color: #1a41bf;
+  color: var(--blue);
   padding: 14px;
   border: 2px solid;
   width: 145px;
 
   a {
     font-size: 1rem;
-    color: #1a41bf;
+    color: var(--blue);
     font-weight: 500;
   }
 }
 
 .social-section {
-  // margin: 0 auto;
-  padding-left: 250px;
-  padding-top: 80px;
+  margin: 5rem auto 2rem auto;
+  // padding-left: 250px;
+  max-width: 32rem;
+  // padding-top: 80px;
 
   h1 {
     color: #cad0e7;
@@ -182,7 +183,7 @@
 }
 
 .footer {
-  background-color: #ffffff;
+  background-color: var(--white);
   padding: 2rem 2rem 0;
 }
 
@@ -193,7 +194,7 @@
   padding-bottom: 1.5rem;
 
   a {
-    color: #ffad42;
+    color: var(--yellow);
     padding-left: 0;
     align-items: center;
     font-weight: 700;
@@ -207,8 +208,8 @@
   align-items: center;
 
   a {
-    color: #ffffff;
-    background: #ffad42;
+    color: var(--white);
+    background: var(--yellow);
     transition: all 0.1s ease-in-out;
     width: 40px;
     height: 40px;
@@ -220,7 +221,7 @@
     margin: 4px;
 
     &:hover {
-      color: #ffffff;
+      color: var(--white);
       transform: scale(1.1);
     }
   }
@@ -239,7 +240,7 @@
   }
 
   a {
-    color: #ffad42;
+    color: var(--yellow);
     font-size: 18px;
     margin: 2rem 0 0;
     line-height: 2.5rem;
