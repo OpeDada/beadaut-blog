@@ -22,52 +22,53 @@ export default function Posts({ allPostsData }) {
       </Head>
       <section>
         <div className="post-page">
-          {allPostsData.map(({ id, date, title, author, image, intro }) => (
-            <div className="post-page-info" key={id}>
-              <div className="post-header">
-                <div className="semi-links">
-                  <Link href={"/posts-list/posts"}>
-                    <a>Motivation</a>
+          {allPostsData.map(
+            ({ id, date, title, author, image, intro, category }) => (
+              <div className="post-page-info" key={id}>
+                <div className="post-header">
+                  <div className="semi-links">
+                    {category.map((item) => (
+                      <Link href={"/posts-list/posts"}>
+                        <a>{item}</a>
+                      </Link>
+                    ))}
+                  </div>
+                  <Link href={`/posts/${id}`}>
+                    <a>
+                      <h2>{title}</h2>
+                    </a>
                   </Link>
-                  <Link href={"/posts-list/posts"}>
-                    <a>Tips</a>
-                  </Link>
+                  <ul className="article-infos">
+                    <li>
+                      By{" "}
+                      <Link href={""}>
+                        <a>{author}</a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href={""}>
+                        <a>
+                          <Date dateString={date} />
+                        </a>
+                      </Link>
+                    </li>
+                  </ul>
                 </div>
-                <Link href={`/posts/${id}`}>
-                  <a>
-                    <h2>{title}</h2>
-                  </a>
-                </Link>
-                <ul className="article-infos">
-                  <li>
-                    By{" "}
-                    <Link href={""}>
-                      <a>{author}</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href={""}>
-                      <a>
-                        <Date dateString={date} />
-                      </a>
-                    </Link>
-                  </li>
-                </ul>
+                <Image
+                  priority
+                  src={image}
+                  className=""
+                  alt=""
+                  layout="responsive"
+                  objectFit="cover"
+                  width={6}
+                  height={4}
+                />
+                <p>{intro}</p>
+                <div className="divider div-transparent div-dot"></div>
               </div>
-              <Image
-                priority
-                src={image}
-                className=""
-                alt=""
-                layout="responsive"
-                objectFit="cover"
-                width={6}
-                height={4}
-              />
-              <p>{intro}</p>
-              <div className="divider div-transparent div-dot"></div>
-            </div>
-          ))}
+            )
+          )}
         </div>
       </section>
     </Layout>
