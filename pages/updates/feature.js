@@ -16,7 +16,6 @@ export async function getStaticProps() {
 }
 
 export default function Updates({ allPostsData }) {
-  console.log(allPostsData);
   return (
     <div>
       <h1 className="feature-header">Feature Updates</h1>

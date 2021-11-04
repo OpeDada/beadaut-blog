@@ -50,7 +50,7 @@ export default function Footer() {
       </div>
       <div className="footer-copyright">
         <p>© 2021 Beadaut Blogs</p>
-        <Link href={"/"}>
+        <Link href={""}>
           <span className="">To the top ↑</span>
         </Link>
       </div>
