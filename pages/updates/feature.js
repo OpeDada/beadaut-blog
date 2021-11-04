@@ -1,12 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Date from "../../components/date";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { getSortedPostsData } from "../../lib/updates";
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
+  const allPostsData = await getSortedPostsData();
   return {
     props: {
       allPostsData,
@@ -15,6 +16,7 @@ export async function getStaticProps() {
 }
 
 export default function Updates({ allPostsData }) {
+  console.log(allPostsData);
   return (
     <div>
       <h1 className="feature-header">Feature Updates</h1>
@@ -34,38 +36,26 @@ export default function Updates({ allPostsData }) {
         <div>
           <section>
             <div className="post-page">
-              {allPostsData.map(
-                ({ id, date, title, author, image, intro, category }) => (
-                  <div className="post-page-info" key={id}>
-                    <div className="post-header">
-                      <div className="semi-links">
-                        {category.map((item) => (
-                          <Link href={"/posts-list/posts"}>
-                            <a>{item}</a>
-                          </Link>
-                        ))}
-                      </div>
-                      <Link href={`/posts/${id}`}>
-                        <a>
-                          <h2>{title}</h2>
-                        </a>
-                      </Link>
-                      <ul className="article-infos">
-                        <li>
-                          By{" "}
-                          <Link href={""}>
-                            <a>{author}</a>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href={""}>
-                            <a>
-                              <Date dateString={date} />
-                            </a>
-                          </Link>
-                        </li>
-                      </ul>
-                    </div>
+              {allPostsData.map(({ id, date, title, image, contentHtml }) => (
+                <div className="post-page-info" key={id}>
+                  <div className="post-header">
+                    <Link href={`/posts/${id}`}>
+                      <a>
+                        <h2>{title}</h2>
+                      </a>
+                    </Link>
+                    <ul className="article-infos">
+                      <li>
+                        <Link href={""}>
+                          <a>
+                            <Date dateString={date} />
+                          </a>
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                  <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+                  {image ? (
                     <Image
                       priority
                       src={image}
@@ -76,11 +66,10 @@ export default function Updates({ allPostsData }) {
                       width={6}
                       height={4}
                     />
-                    <p>{intro}</p>
-                    <div className="divider div-transparent div-dot"></div>
-                  </div>
-                )
-              )}
+                  ) : null}
+                  <div className="divider div-transparent div-dot"></div>
+                </div>
+              ))}
             </div>
           </section>
         </div>
