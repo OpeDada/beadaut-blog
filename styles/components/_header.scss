@@ -1,5 +1,5 @@
 .header-group {
-  background: #ffffff;
+  background: var(--white);
   padding: 0 2rem;
 }
 
@@ -17,10 +17,6 @@
   p {
     color: #6d6d6d;
   }
-}
-
-.site-description {
-  color: #6d6d6d;
 }
 
 .site-header .navbar-collapse {

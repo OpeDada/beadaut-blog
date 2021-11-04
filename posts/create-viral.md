@@ -1,9 +1,10 @@
 ---
-title: 'Create Viral Posts With These Secrets'
-intro: 'Open ended questions are great for driving social media engagement because they open the floor for thought sharing and conversation.'
-author: 'Joshua Owoyemi'
-image: '/images/bead-create-viral.jpeg'
-date: '2021-07-03'
+title: "Create Viral Posts With These Secrets"
+intro: "Open ended questions are great for driving social media engagement because they open the floor for thought sharing and conversation."
+author: "Joshua Owoyemi"
+category: ["Motivation", "Tips"]
+image: "/images/bead-create-viral.jpeg"
+date: "2021-07-03"
 ---
 
 Last week I promised to share the types of contents you should be creating if you want massive engagement on your social media. Truth is creating valuable content consistently is demanding work and one of the things that makes it all worth it is when people respond well to the posts. The opposite is the reality for most people and that’s frustrating.
