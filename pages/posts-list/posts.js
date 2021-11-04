@@ -28,7 +28,7 @@ export default function Posts({ allPostsData }) {
                 <div className="post-header">
                   <div className="semi-links">
                     {category.map((item) => (
-                      <Link href={"/posts-list/posts"}>
+                      <Link href="#">
                         <a>{item}</a>
                       </Link>
                     ))}

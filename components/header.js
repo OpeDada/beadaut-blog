@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Link from "next/link";
-import StyledLink from "next/link";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { useRouter } from "next/router";
@@ -32,15 +31,6 @@ export default function Header() {
                 Blogs
               </a>
             </Link>
-            <Link href={"https://www.beadaut.com/about"}>
-              <a
-                style={{ color: "#FFAD42" }}
-                className="nav-link"
-                target="_blank"
-              >
-                About
-              </a>
-            </Link>
             <Link href={"/updates/feature"}>
               <a
                 style={{
@@ -52,6 +42,15 @@ export default function Header() {
                 className="nav-link"
               >
                 Updates
+              </a>
+            </Link>
+            <Link href={"https://www.beadaut.com/about.html"}>
+              <a
+                style={{ color: "#d79237" }}
+                className="nav-link"
+                target="_blank"
+              >
+                About Beadaut
               </a>
             </Link>
           </Nav>
