@@ -33,12 +33,8 @@ export default class Header extends Component {
                   About
                 </a>
               </Link>
-              <Link href="/">
-                <a
-                  style={{ color: "#FFAD42" }}
-                  className="nav-link"
-                  target="_blank"
-                >
+              <Link href={"/updates/feature"}>
+                <a style={{ color: "#FFAD42" }} className="nav-link">
                   Updates
                 </a>
               </Link>
