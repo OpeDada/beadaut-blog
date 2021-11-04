@@ -50,18 +50,18 @@ export default function Home({ allPostsData, aboutData }) {
           <div className="blog-list">
             {allPostsData.map(({ id, date, title, intro, image }) => (
               <li className="blog-topics" key={id}>
-                <Image
-                  priority
-                  src={image}
-                  className=""
-                  alt=""
-                  layout="responsive"
-                  objectFit="cover"
-                  width={6}
-                  height={4}
-                />
                 <Link href={`/posts/${id}`}>
                   <a>
+                    <Image
+                      priority
+                      src={image}
+                      className=""
+                      alt=""
+                      layout="responsive"
+                      objectFit="cover"
+                      width={6}
+                      height={4}
+                    />
                     <h2>{title}</h2>
                   </a>
                 </Link>

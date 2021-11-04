@@ -7,6 +7,6 @@ Here is where the journey begins. Check back here to see more new features added
 
 Soon, we plan to add the following features:
 
-Certificate awards
-Payments (with Paystack and Paypal)
-Customized course landing pages
+- Certificate awards
+- Payments (with Paystack and Paypal)
+- Customized course landing pages
