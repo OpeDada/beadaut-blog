@@ -99,27 +99,23 @@ export default function Home({ allPostsData, aboutData }) {
               </div>
             </div>
           </div>
-          <div>
-            <div className="social-section">
-              <h1>Share this:</h1>
-              <div className="socials">
-                <Link href={"https://twitter.com/beadautedtech"}>
-                  <a target="_blank" className="social-button">
-                    <FontAwesomeIcon icon={faTwitter} width="16" /> Twitter
-                  </a>
-                </Link>
-                <Link href={"https://www.facebook.com/beadautedtech"}>
-                  <a target="_blank" className="social-button" target="_blank">
-                    <FontAwesomeIcon
-                      icon={faFacebook}
-                      width="16"
-                      className="pb-1"
-                    />{" "}
-                    Facebook
-                  </a>
-                </Link>
-              </div>
-            </div>
+          <div className="social-section">
+            <h1>Share this:</h1>
+            <Link href={"https://twitter.com/beadautedtech"}>
+              <a target="_blank" className="social-button">
+                <FontAwesomeIcon icon={faTwitter} width="16" /> Twitter
+              </a>
+            </Link>
+            <Link href={"https://www.facebook.com/beadautedtech"}>
+              <a target="_blank" className="social-button" target="_blank">
+                <FontAwesomeIcon
+                  icon={faFacebook}
+                  width="16"
+                  className="pb-1"
+                />{" "}
+                Facebook
+              </a>
+            </Link>
           </div>
         </section>
         <section className="footer">
