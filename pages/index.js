@@ -94,7 +94,7 @@ export default function Home({ allPostsData, aboutData }) {
               </p>
               <div className="app-button">
                 <Link href={"https://app.beadaut.com/app/courses"}>
-                  <a target="_blank">GO TO APP</a>
+                  <a target="_blank">Go to App</a>
                 </Link>
               </div>
             </div>
