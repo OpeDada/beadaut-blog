@@ -4,12 +4,6 @@ import { getSortedPostsData, getAboutData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faInstagram,
-  faTwitter,
-  faFacebook,
-} from "@fortawesome/free-brands-svg-icons";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -98,24 +92,6 @@ export default function Home({ allPostsData, aboutData }) {
                 </Link>
               </div>
             </div>
-          </div>
-          <div className="social-section">
-            <h1>Share this:</h1>
-            <Link href={"https://twitter.com/beadautedtech"}>
-              <a target="_blank" className="social-button">
-                <FontAwesomeIcon icon={faTwitter} width="16" /> Twitter
-              </a>
-            </Link>
-            <Link href={"https://www.facebook.com/beadautedtech"}>
-              <a target="_blank" className="social-button" target="_blank">
-                <FontAwesomeIcon
-                  icon={faFacebook}
-                  width="16"
-                  className="pb-1"
-                />{" "}
-                Facebook
-              </a>
-            </Link>
           </div>
         </section>
         <section className="footer">

@@ -47,3 +47,29 @@
     font-weight: 500;
   }
 }
+
+.social-section {
+  margin: 5rem auto 2rem auto;
+  max-width: 32rem;
+
+  h1 {
+    color: #cad0e7;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.social-button {
+  margin-right: 0.4rem;
+  color: #656565;
+  font-weight: 300;
+  font-size: 14px;
+  background: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px 8px 4px 4px;
+  text-decoration: none;
+
+  &:hover {
+    color: #656565;
+  }
+}
