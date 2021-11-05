@@ -1,0 +1,49 @@
+.article-header {
+  text-align: center;
+  background-color: var(--white);
+  padding: 4rem 3rem;
+
+  h2 {
+    font-weight: 800;
+    font-size: 3.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 1rem 4rem 0 4rem;
+  }
+}
+
+.article-content {
+  color: var(--white);
+  max-width: 30rem;
+  margin: 3rem auto 1rem auto;
+}
+
+.article-content p:nth-child(2)::first-letter {
+  color: var(--yellow);
+  font-weight: bold;
+  margin: 4px 2px 8px 0;
+  float: left;
+  font-size: 100px;
+  line-height: 35px;
+  padding-top: 16px;
+  padding-right: 8px;
+}
+
+.article-app-button {
+  margin: 2rem auto 2rem;
+  background-color: var(--yellow);
+  color: var(--yellow);
+  padding: 1rem;
+  border: 2px solid;
+  width: 25rem;
+  text-align: center;
+  text-transform: uppercase;
+
+  a {
+    color: var(--white);
+    font-weight: 500;
+  }
+}
