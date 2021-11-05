@@ -18,14 +18,12 @@ export default function Footer() {
             <Link href={"/posts-list/posts"}>
               <a className="nav-link">Blogs</a>
             </Link>
+            <Link href={"/updates/feature"}>
+              <a className="nav-link">Updates</a>
+            </Link>
             <Link href={"https://www.beadaut.com/"}>
               <a className="nav-link" target="_blank">
                 About
-              </a>
-            </Link>
-            <Link href="/">
-              <a className="nav-link" target="_blank">
-                Updates
               </a>
             </Link>
           </Nav>
