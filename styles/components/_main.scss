@@ -146,19 +146,21 @@
   padding: 14px;
   border: 2px solid;
   width: 145px;
+  text-transform: uppercase;
 
   a {
     font-size: 1rem;
     color: var(--blue);
     font-weight: 500;
   }
+  &:hover {
+    color: var(--yellow);
+  }
 }
 
 .social-section {
   margin: 5rem auto 2rem auto;
-  // padding-left: 250px;
   max-width: 32rem;
-  // padding-top: 80px;
 
   h1 {
     color: #cad0e7;
