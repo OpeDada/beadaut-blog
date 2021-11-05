@@ -24,7 +24,7 @@ export default function Updates({ allPostsData }) {
       </h2>
       <div className="feature-app-button">
         <Link href={"https://app.beadaut.com/app/courses"}>
-          <a target="_blank">GO TO APP</a>
+          <a target="_blank">Go to App</a>
         </Link>
       </div>
       <div className="feature-infos">
