@@ -71,12 +71,10 @@ export default function Home({ allPostsData, aboutData }) {
         </section>
         <section className="about-section">
           <div className="divider div-transparent div-dot"></div>
-          <div>
-            <div
-              className="about-content"
-              dangerouslySetInnerHTML={{ __html: aboutData.contentHtml }}
-            />
-          </div>
+          <div
+            className="about-content"
+            dangerouslySetInnerHTML={{ __html: aboutData.contentHtml }}
+          />
           <div className="white-card">
             <div className="white-content">
               <h2>

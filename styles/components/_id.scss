@@ -21,7 +21,7 @@
   margin: 3rem auto 1rem auto;
 }
 
-.article-content p:nth-child(2)::first-letter {
+.article-content:first-letter {
   color: var(--yellow);
   font-weight: bold;
   margin: 4px 2px 8px 0;
@@ -45,6 +45,25 @@
   a {
     color: var(--white);
     font-weight: 500;
+  }
+}
+
+.art-infos {
+  color: #6d6d6d;
+  justify-content: center;
+  margin-top: 2rem;
+  display: flex;
+  font-weight: 400;
+  list-style: none;
+
+  a {
+    color: #6d6d6d;
+    margin: 1rem 1rem 1rem 0;
+
+    &:hover {
+      color: #6d6d6d;
+      text-decoration: underline;
+    }
   }
 }
 

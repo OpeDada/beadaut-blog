@@ -5,6 +5,8 @@ author: "Joshua Owoyemi"
 category: ["Motivation", "Tips"]
 image: "/images/bead-create-viral.jpeg"
 date: "2021-07-03"
+cta: "Start your creator journey"
+ctaLink: "https://app.beadaut.com"
 ---
 
 Last week I promised to share the types of contents you should be creating if you want massive engagement on your social media. Truth is creating valuable content consistently is demanding work and one of the things that makes it all worth it is when people respond well to the posts. The opposite is the reality for most people and that’s frustrating.
@@ -51,5 +53,6 @@ I hope this post helps you get creative and create posts that drive social media
 
 P. S: Watch out for our BIG announcement this month.
 
-Talk soon,
-Joshua
+Talk soon,\
+Joshua\
+Founder, Beadaut.

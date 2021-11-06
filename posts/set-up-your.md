@@ -5,6 +5,8 @@ author: "Joshua Owoyemi"
 category: ["Tips"]
 image: "/images/bead-set-up.jpeg"
 date: "2021-08-28"
+cta: "Start your creator journey"
+ctaLink: "https://app.beadaut.com"
 ---
 
 What makes some courses perform better than others? Is it the title? The content? Or the design? Read on to find out the answer. 😉
@@ -25,3 +27,7 @@ Aim for less content overall, but use a variety of methods to deliver your cours
 Incorporate these strategies into your courses and see and an exponential change in your students’ experience as well as learning outcomes.
 
 Remember to have fun with your course.
+
+Talk soon,\
+Joshua\
+Founder, Beadaut.

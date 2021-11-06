@@ -4,6 +4,9 @@ import Image from "next/image";
 import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Date from "../../components/date";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTwitter, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 
 export default function Post({ postData }) {
   return (
@@ -15,22 +18,24 @@ export default function Post({ postData }) {
       <article>
         <div className="article-header">
           <div className="semi-links">
-            <Link href="#">
-              <a>{postData.category}</a>
-            </Link>
+            {postData.category.map((item) => (
+              <Link href="#">
+                <a>{item}</a>
+              </Link>
+            ))}
           </div>
           <h2>{postData.title}</h2>
           <p>{postData.intro}</p>
-          <ul className="article-infos">
-            <li style={{ color: "#6d6d6d;" }}>
+          <ul className="art-infos">
+            <li>
               By{" "}
               <Link href={""}>
-                <a style={{ color: "#6d6d6d;" }}>{postData.author}</a>
+                <a>{postData.author}</a>
               </Link>
             </li>
             <li>
               <Link href={""}>
-                <a style={{ color: "#6d6d6d;" }}>
+                <a>
                   <Date dateString={postData.date} />
                 </a>
               </Link>
@@ -50,15 +55,35 @@ export default function Post({ postData }) {
         <div className="article-content">
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
           <div className="article-app-button">
-            <Link href={"https://app.beadaut.com/app/courses"}>
-              <a target="_blank">Start your creator journey on beadaut</a>
-            </Link>
+            {postData.cta ? (
+              <Link href={postData.ctaLink}>
+                <a target="_blank">{postData.cta}</a>
+              </Link>
+            ) : null}
           </div>
-          <p>
-            Talk soon, <br /> Joshua <br />
-            Founder, Beadaut.
-          </p>
         </div>
+        <div className="social-section">
+          <h1>Share this:</h1>
+          <Link href={"https://twitter.com/beadautedtech"}>
+            <a target="_blank" className="social-button">
+              <FontAwesomeIcon icon={faTwitter} width="16" /> Twitter
+            </a>
+          </Link>
+          <Link href={"https://www.facebook.com/beadautedtech"}>
+            <a target="_blank" className="social-button" target="_blank">
+              <FontAwesomeIcon icon={faFacebook} width="16" className="pb-1" />{" "}
+              Facebook
+            </a>
+          </Link>
+          <Link href={""}>
+            <a target="_blank" className="social-button" target="_blank">
+              <FontAwesomeIcon icon={faThumbsUp} width="16" className="pb-1" />{" "}
+              Like
+            </a>
+          </Link>
+        </div>
+        <div className="divider div-transparent div-dot"></div>
+        <div className="divider div-transparent div-dot"></div>
       </article>
     </Layout>
   );

@@ -8,8 +8,10 @@ import {
   faTwitter,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
+import { useRouter } from "next/router";
 
-export default function Footer() {
+export default function Footer({ pageId }) {
+  const router = useRouter();
   return (
     <section className="footer">
       <div className="footer-top">
@@ -21,9 +23,13 @@ export default function Footer() {
             <Link href={"/updates/feature"}>
               <a className="nav-link">Updates</a>
             </Link>
-            <Link href={"https://www.beadaut.com/"}>
-              <a className="nav-link" target="_blank">
-                About
+            <Link href={"https://www.beadaut.com/about.html"}>
+              <a
+                style={{ color: "#d79237" }}
+                className="nav-link"
+                target="_blank"
+              >
+                About Beadaut
               </a>
             </Link>
           </Nav>
@@ -48,7 +54,7 @@ export default function Footer() {
       </div>
       <div className="footer-copyright">
         <p>© 2021 Beadaut Blogs</p>
-        <Link href={""}>
+        <Link href={pageId ? `/posts/${pageId}` : router.pathname}>
           <span className="">To the top ↑</span>
         </Link>
       </div>
