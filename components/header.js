@@ -35,7 +35,7 @@ export default function Header() {
               <a
                 style={{
                   color: "#FFAD42",
-                  textDecoration: router.pathname.includes("/updates/feature")
+                  textDecoration: router.pathname.includes("/updates/features")
                     ? "underline"
                     : "",
                 }}

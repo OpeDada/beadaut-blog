@@ -20,7 +20,7 @@ export default function Footer({ pageId }) {
             <Link href={"/posts-list/posts"}>
               <a className="nav-link">Blogs</a>
             </Link>
-            <Link href={"/updates/feature"}>
+            <Link href={"/updates/features"}>
               <a className="nav-link">Updates</a>
             </Link>
             <Link href={"https://www.beadaut.com/about.html"}>

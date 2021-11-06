@@ -29,12 +29,12 @@ export default function Post({ postData }) {
           <ul className="art-infos">
             <li>
               By{" "}
-              <Link href={""}>
+              <Link href={"#"}>
                 <a>{postData.author}</a>
               </Link>
             </li>
             <li>
-              <Link href={""}>
+              <Link href={"#"}>
                 <a>
                   <Date dateString={postData.date} />
                 </a>
