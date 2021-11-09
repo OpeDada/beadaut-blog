@@ -31,8 +31,8 @@ export default function Home({ allPostsData, aboutData }) {
         <Head>
           <title>{siteTitle}</title>
         </Head>
-        <section className="banner">
-          <h1>
+        <section>
+          <h1 className="banner-heading">
             Broaden Your Knowledge,
             <br /> Broaden Your Horizon.
           </h1>
@@ -96,9 +96,9 @@ export default function Home({ allPostsData, aboutData }) {
           <div className="footer-recent-posts">
             <h2>Recent Posts</h2>
             {allPostsData.map(({ id, title }) => (
-              <li className="" key={id}>
+              <li key={id}>
                 <Link href={`/posts/${id}`}>
-                  <a>{title}</a>
+                  <a className="recent-list">{title}</a>
                 </Link>
               </li>
             ))}
