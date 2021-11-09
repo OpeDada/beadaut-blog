@@ -101,15 +101,18 @@ export default function Post({ postData, allPostsData }) {
               </Link>
             </div>
             <div className="divider div-transparent div-dot"></div>
-            <div className="art-infos">
+            <div className="recommend-header">
+              <p>Recommended</p>
+            </div>
+            <div className="recommend-infos">
               {before !== undefined && (
                 <Link href={`/posts/${allPostsData[before].id}`}>
-                  <a>{allPostsData[before].title}</a>
+                  <a>{`< ${allPostsData[before].title}`}</a>
                 </Link>
               )}
               {after !== undefined && (
                 <Link href={`/posts/${allPostsData[after].id}`}>
-                  <a>{allPostsData[after].title}</a>
+                  <a>{`${allPostsData[after].title} >`}</a>
                 </Link>
               )}
             </div>
