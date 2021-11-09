@@ -2,14 +2,6 @@
   padding: 2rem 2rem;
 }
 
-.feature-header {
-  background-color: var(--white);
-  padding: 2rem 0 4rem;
-  text-align: center;
-  font-weight: 800;
-  font-size: 4.5rem;
-}
-
 .feature-intro {
   text-align: left;
   margin: 4rem auto;
@@ -35,10 +27,6 @@
   }
 }
 
-.feature-infos {
-  padding: 0 2rem 0 2rem;
-}
-
 .feature-info {
   display: flex;
   margin-bottom: 2rem;
@@ -52,6 +40,5 @@
 
 .right-items {
   flex-basis: 66.66%;
-  margin-left: 2rem;
   color: var(--white);
 }
