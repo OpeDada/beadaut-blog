@@ -28,35 +28,33 @@ export default function Updates({ allPostsData }) {
             <a target="_blank">Go to App</a>
           </Link>
         </div>
-        <div className="feature-infos">
-          {allPostsData.map(({ id, date, title, image, contentHtml }) => (
-            <div className="feature-info" key={id}>
-              <div className="left-items">
-                <p>
-                  <strong>{title}</strong>
-                  <br />
-                  <Date dateString={date} />
-                </p>
-              </div>
-              <div className="right-items">
-                <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+        {allPostsData.map(({ id, date, title, image, contentHtml }) => (
+          <div className="feature-info" key={id}>
+            <div className="left-items">
+              <p>
+                <strong>{title}</strong>
                 <br />
-                {image ? (
-                  <Image
-                    priority
-                    src={image}
-                    className=""
-                    alt=""
-                    layout="responsive"
-                    objectFit="fill"
-                    width={6}
-                    height={4}
-                  />
-                ) : null}
-              </div>
+                <Date dateString={date} />
+              </p>
             </div>
-          ))}
-        </div>
+            <div className="right-items">
+              <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+              <br />
+              {image ? (
+                <Image
+                  priority
+                  src={image}
+                  className=""
+                  alt=""
+                  layout="responsive"
+                  objectFit="fill"
+                  width={6}
+                  height={4}
+                />
+              ) : null}
+            </div>
+          </div>
+        ))}
         <div className="social-section">
           <h1>Share this:</h1>
           <Link href={"https://twitter.com/beadautedtech"}>
