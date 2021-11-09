@@ -24,8 +24,7 @@
 }
 
 .latest-blogs {
-  margin-top: 4rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0 2rem 0;
 
   h5 {
     font-size: 24px;
@@ -37,7 +36,7 @@
 .blog-list {
   list-style-type: none;
   display: grid;
-  grid-gap: 24px;
+  grid-gap: 28px;
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 4rem;
 
@@ -115,12 +114,11 @@
 
 .white-card {
   background-color: var(--white);
-  margin: 2rem;
+  margin: 2rem 2rem;
   padding: 2rem;
 }
 
 .white-content {
-  width: 30rem;
   text-align: center;
   margin: 0 auto;
 
@@ -137,16 +135,16 @@
 
 .app-button {
   margin: 2rem auto;
-  background-color: transparent;
-  color: var(--blue);
-  padding: 14px;
-  border: 2px solid;
-  width: 145px;
+  border: 2px solid var(--blue);
+  padding: 1rem;
   text-transform: uppercase;
+  transition: 200ms ease-in-out;
+  max-width: 10rem;
 
   a {
-    font-size: 1rem;
+    background-color: transparent;
     color: var(--blue);
+    font-size: 1rem;
     font-weight: 500;
   }
   &:hover {
