@@ -64,7 +64,7 @@ a {
     padding: 2rem;
   }
   .other-article-info {
-    padding: 2rem 2rem;
+    padding: 2rem 2rem 0;
   }
 }
 
@@ -140,7 +140,7 @@ a {
     }
     p {
       font-size: 1rem;
-      padding: 1rem 2rem 0;
+      padding: 1rem 0;
     }
   }
   .other-article {
@@ -148,6 +148,7 @@ a {
   }
 
   .art-infos {
-    max-width: 85%;
+    max-width: 100%;
+    font-size: 14px;
   }
 }

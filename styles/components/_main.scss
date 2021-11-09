@@ -48,7 +48,7 @@
 .divider {
   position: relative;
   height: 1px;
-  padding: 0 0 2rem 0;
+  padding: 0 0 4rem 0;
 }
 
 .div-transparent:before {
@@ -185,10 +185,10 @@
 .footer-recent-posts {
   list-style: none;
   border-bottom: 0.1rem solid #dedfdf;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 
   h2 {
-    margin: 2rem 0 1.8rem 0;
+    margin: 2rem 0 1.5rem 0;
     font-size: 40px;
   }
 }
