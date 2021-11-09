@@ -55,7 +55,10 @@ export default function Footer({ pageId }) {
       <div className="footer-copyright">
         <p>© 2021 Beadaut Blogs</p>
         <Link href={pageId ? `/posts/${pageId}` : router.pathname}>
-          <span className="">To the top ↑</span>
+          <div>
+            <span className="to-the-top">To the top ↑</span>
+            <span className="up">Up ↑</span>
+          </div>
         </Link>
       </div>
     </section>
