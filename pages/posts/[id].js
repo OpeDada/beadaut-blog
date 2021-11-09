@@ -2,19 +2,37 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Layout from "../../components/layout";
-import { getAllPostIds, getPostData } from "../../lib/posts";
+import {
+  getAllPostIds,
+  getPostData,
+  getSortedPostsData,
+} from "../../lib/posts";
 import Date from "../../components/date";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faFacebook } from "@fortawesome/free-brands-svg-icons";
 
-export default function Post({ postData }) {
-  // get all sorted postdata
-  // loop through all postdata
-  // check if id is equal current id
-  // check if there is a post before and after
-  // get post before
-  // get post after
+function getBeforeAndAfter(postId, allPostsData) {
+  let before;
+  let after;
+  allPostsData.forEach((element, id) => {
+    if (postId === element.id) {
+      if (id === 0) {
+        before = undefined;
+        after = id + 1;
+      } else if (id === allPostsData.length - 1) {
+        after = undefined;
+        before = id - 1;
+      } else {
+        after = id + 1;
+        before = id - 1;
+      }
+    }
+  });
+  return { before, after };
+}
 
+export default function Post({ postData, allPostsData }) {
+  const { before, after } = getBeforeAndAfter(postData.id, allPostsData);
   return (
     <Layout>
       <Head>
@@ -33,17 +51,12 @@ export default function Post({ postData }) {
           <p>{postData.intro}</p>
           <div className="art-infos">
             <li>
-              By{" "}
-              <Link href={""}>
-                <a>{postData.author}</a>
-              </Link>
+              By <a>{postData.author}</a>
             </li>
             <li>
-              <Link href={""}>
-                <a>
-                  <Date dateString={postData.date} />
-                </a>
-              </Link>
+              <a>
+                <Date dateString={postData.date} />
+              </a>
             </li>
           </div>
         </div>
@@ -88,6 +101,18 @@ export default function Post({ postData }) {
               </Link>
             </div>
             <div className="divider div-transparent div-dot"></div>
+            <div className="art-infos">
+              {before !== undefined && (
+                <Link href={`/posts/${allPostsData[before].id}`}>
+                  <a>{allPostsData[before].title}</a>
+                </Link>
+              )}
+              {after !== undefined && (
+                <Link href={`/posts/${allPostsData[after].id}`}>
+                  <a>{allPostsData[after].title}</a>
+                </Link>
+              )}
+            </div>
             <div className="divider div-transparent div-dot"></div>
           </div>
         </div>
@@ -106,9 +131,11 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
+  const allPostsData = getSortedPostsData();
   return {
     props: {
       postData,
+      allPostsData,
     },
   };
 }
