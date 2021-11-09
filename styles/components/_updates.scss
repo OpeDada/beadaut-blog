@@ -1,16 +1,20 @@
+.all-updates {
+  padding: 2rem 2rem;
+}
+
 .feature-header {
   background-color: var(--white);
-  padding: 4rem 0;
+  padding: 2rem 0 4rem;
   text-align: center;
   font-weight: 800;
-  font-size: 3.5rem;
+  font-size: 4.5rem;
 }
 
 .feature-intro {
   text-align: left;
   margin: 4rem auto;
   color: var(--yellow);
-  max-width: 32rem;
+  max-width: 35rem;
   font-size: 1.5rem;
   line-height: 1.4;
 }
@@ -50,5 +54,4 @@
   flex-basis: 66.66%;
   margin-left: 2rem;
   color: var(--white);
-  font-size: 16px;
 }
