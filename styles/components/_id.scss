@@ -20,15 +20,11 @@
     padding: 1rem 4rem 0;
   }
 }
-.other-article-info {
-  padding: 2rem 2rem;
-}
 
 .article-content {
   color: var(--white);
   max-width: 35rem;
   margin: 1rem auto;
-  padding: 1rem;
 }
 
 .article-content:first-letter {
@@ -59,15 +55,16 @@
 
 .art-infos {
   color: #6d6d6d;
-  justify-content: center;
   margin-top: 2rem;
   display: flex;
   font-weight: 400;
   list-style: none;
+  justify-content: space-between;
+  max-width: 40%;
+  margin: 1rem auto;
 
   a {
     color: #6d6d6d;
-    margin: 1rem 1rem 1rem 0;
 
     &:hover {
       color: #6d6d6d;
