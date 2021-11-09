@@ -1,21 +1,8 @@
-.banner {
-  background-color: var(--blue);
-  height: 280px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0.5rem;
-
-  h1 {
-    color: var(--yellow);
-    text-align: center;
-    font-size: 48px;
-  }
-}
-
-.banner-text {
-  color: "#e6ba6f";
-  text-align: "center";
+.banner-heading {
+  color: var(--yellow);
+  text-align: center;
+  font-size: 48px;
+  margin: 2rem auto;
 }
 
 .main-blog-list {
@@ -55,13 +42,13 @@
 .about-section {
   color: var(--white);
   background-color: var(--blue);
-  padding: 5rem 0 0 0;
+  padding-top: 3rem;
 }
 
 .divider {
   position: relative;
   height: 1px;
-  padding: 0 0 4rem 0;
+  padding: 0 0 3rem 0;
 }
 
 .div-transparent:before {
@@ -96,9 +83,7 @@
 
 .about-content {
   max-width: 30.5rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.25em;
+  margin: 0 auto;
 }
 
 .about-content::first-letter {
@@ -123,7 +108,7 @@
   margin: 0 auto;
 
   h2 {
-    padding: 4rem 0 1.5rem 0;
+    padding: 1rem 0;
     color: #2754e7;
     font-size: 2.5rem;
   }
@@ -206,13 +191,13 @@
     margin: 2rem 0 1.8rem 0;
     font-size: 40px;
   }
-
-  a {
-    color: var(--yellow);
-    font-size: 18px;
-    margin: 2rem 0 0;
-    line-height: 2.5rem;
-  }
+}
+.recent-list {
+  color: var(--yellow);
+  font-size: 18px;
+  line-height: 2.5;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .footer-copyright {
