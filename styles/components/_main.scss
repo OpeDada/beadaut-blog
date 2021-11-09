@@ -1,21 +1,8 @@
-.banner {
-  background-color: var(--blue);
-  height: 280px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0.5rem;
-
-  h1 {
-    color: var(--yellow);
-    text-align: center;
-    font-size: 48px;
-  }
-}
-
-.banner-text {
-  color: "#e6ba6f";
-  text-align: "center";
+.banner-heading {
+  color: var(--yellow);
+  text-align: center;
+  font-size: 48px;
+  margin: 2rem auto;
 }
 
 .main-blog-list {
@@ -24,8 +11,7 @@
 }
 
 .latest-blogs {
-  margin-top: 4rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0 2rem 0;
 
   h5 {
     font-size: 24px;
@@ -37,7 +23,7 @@
 .blog-list {
   list-style-type: none;
   display: grid;
-  grid-gap: 24px;
+  grid-gap: 28px;
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 4rem;
 
@@ -56,7 +42,7 @@
 .about-section {
   color: var(--white);
   background-color: var(--blue);
-  padding: 5rem 0 5rem 0;
+  padding-top: 3rem;
 }
 
 .divider {
@@ -97,9 +83,7 @@
 
 .about-content {
   max-width: 30.5rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.25em;
+  margin: 0 auto;
 }
 
 .about-content::first-letter {
@@ -115,21 +99,16 @@
 
 .white-card {
   background-color: var(--white);
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.25em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 2rem 2rem;
+  padding: 2rem;
 }
 
 .white-content {
-  width: 30rem;
   text-align: center;
   margin: 0 auto;
 
   h2 {
-    padding: 4rem 0 1.5rem 0;
+    padding: 1rem 0;
     color: #2754e7;
     font-size: 2.5rem;
   }
@@ -140,45 +119,21 @@
 }
 
 .app-button {
-  margin: 2rem auto 5rem;
-  background-color: transparent;
-  color: var(--blue);
-  padding: 14px;
-  border: 2px solid;
-  width: 145px;
+  margin: 2rem auto;
+  border: 2px solid var(--blue);
+  padding: 1rem;
+  text-transform: uppercase;
+  transition: 200ms ease-in-out;
+  max-width: 10rem;
 
   a {
-    font-size: 1rem;
+    background-color: transparent;
     color: var(--blue);
+    font-size: 1rem;
     font-weight: 500;
   }
-}
-
-.social-section {
-  margin: 5rem auto 2rem auto;
-  // padding-left: 250px;
-  max-width: 32rem;
-  // padding-top: 80px;
-
-  h1 {
-    color: #cad0e7;
-    margin-bottom: 2.5rem;
-  }
-}
-
-.social-button {
-  margin-right: 0.4rem;
-  color: #656565;
-  font-weight: 300;
-  font-size: 14px;
-  background: #f8f8f8;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 4px 8px 4px 4px;
-  text-decoration: none;
-
   &:hover {
-    color: #656565;
+    color: var(--yellow);
   }
 }
 
@@ -228,23 +183,19 @@
 }
 
 .footer-recent-posts {
-  margin-top: 4rem;
   list-style: none;
   border-bottom: 0.1rem solid #dedfdf;
-  padding-bottom: 4rem;
-  // width: 60%;
+  padding-bottom: 2rem;
 
   h2 {
-    margin-bottom: 1.8rem;
+    margin: 2rem 0 1.5rem 0;
     font-size: 40px;
   }
-
-  a {
-    color: var(--yellow);
-    font-size: 18px;
-    margin: 2rem 0 0;
-    line-height: 2.5rem;
-  }
+}
+.recent-list {
+  color: var(--yellow);
+  line-height: 2.5;
+  display: inline-block;
 }
 
 .footer-copyright {

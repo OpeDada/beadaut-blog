@@ -5,6 +5,8 @@ author: "Joshua Owoyemi"
 category: ["Motivation", "Tips"]
 image: "/images/bead-why-you.jpeg"
 date: "2021-07-11"
+cta: "Start your creator journey"
+ctaLink: "https://app.beadaut.com"
 ---
 
 How do you capture your audience’s attention in a world where the average human’s attention span is less than that of a fish?
@@ -37,5 +39,6 @@ If you have not yet whitelisted this email address, you should do that now, so y
 
 Have a lovely weekend.
 
-Talk Soon,
-Joshua
+Talk soon,\
+Joshua\
+Founder, Beadaut.

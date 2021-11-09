@@ -1,16 +1,12 @@
-.feature-header {
-  background-color: var(--white);
-  padding: 4rem 0;
-  text-align: center;
-  font-weight: 800;
-  font-size: 3.5rem;
+.all-updates {
+  padding: 2rem 2rem;
 }
 
 .feature-intro {
   text-align: left;
   margin: 4rem auto;
   color: var(--yellow);
-  max-width: 32rem;
+  max-width: 35rem;
   font-size: 1.5rem;
   line-height: 1.4;
 }
@@ -21,17 +17,14 @@
   color: var(--yellow);
   padding: 14px;
   border: 2px solid;
-  width: 145px;
+  width: 8rem;
   text-align: center;
+  text-transform: uppercase;
 
   a {
     color: var(--white);
     font-weight: 500;
   }
-}
-
-.feature-infos {
-  padding: 0 2rem 0 2rem;
 }
 
 .feature-info {
@@ -47,7 +40,5 @@
 
 .right-items {
   flex-basis: 66.66%;
-  margin-left: 2rem;
   color: var(--white);
-  font-size: 16px;
 }
