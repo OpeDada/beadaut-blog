@@ -42,31 +42,33 @@ export default function Home({ allPostsData, aboutData }) {
             <h5>Latest from the Blog</h5>
           </div>
           <div className="blog-list">
-            {allPostsData.map(({ id, date, title, intro, image }) => (
-              <li className="blog-topics" key={id}>
-                <Link href={`/posts/${id}`}>
-                  <a>
-                    <Image
-                      priority
-                      src={image}
-                      className=""
-                      alt=""
-                      layout="responsive"
-                      objectFit="cover"
-                      width={6}
-                      height={4}
-                    />
-                    <h2>{title}</h2>
-                  </a>
-                </Link>
-                <p>{intro}</p>
-                <small>
-                  <p>
-                    <Date dateString={date} />
-                  </p>
-                </small>
-              </li>
-            ))}
+            {allPostsData
+              .map(({ id, date, title, intro, image }) => (
+                <li className="blog-topics" key={id}>
+                  <Link href={`/posts/${id}`}>
+                    <a>
+                      <Image
+                        priority
+                        src={image}
+                        className=""
+                        alt=""
+                        layout="responsive"
+                        objectFit="cover"
+                        width={6}
+                        height={4}
+                      />
+                      <h2>{title}</h2>
+                    </a>
+                  </Link>
+                  <p>{intro}</p>
+                  <small>
+                    <p>
+                      <Date dateString={date} />
+                    </p>
+                  </small>
+                </li>
+              ))
+              .slice(0, 3)}
           </div>
         </section>
         <section className="about-section">
@@ -95,13 +97,15 @@ export default function Home({ allPostsData, aboutData }) {
         <section className="footer">
           <div className="footer-recent-posts">
             <h2>Recent Posts</h2>
-            {allPostsData.map(({ id, title }) => (
-              <li key={id}>
-                <Link href={`/posts/${id}`}>
-                  <a className="recent-list">{title}</a>
-                </Link>
-              </li>
-            ))}
+            {allPostsData
+              .map(({ id, title }) => (
+                <li key={id}>
+                  <Link href={`/posts/${id}`}>
+                    <a className="recent-list">{title}</a>
+                  </Link>
+                </li>
+              ))
+              .slice(0, 5)}
           </div>
         </section>
       </Layout>
