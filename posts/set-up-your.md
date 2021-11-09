@@ -1,5 +1,5 @@
 ---
-title: "Set up Your Course for Success With These Proven Strategy"
+title: "Set up Your Course for Success With These Proven Strategies"
 intro: "What makes some courses perform better than others? Is it the title? The content? Or the design?"
 author: "Joshua Owoyemi"
 category: ["Tips"]
