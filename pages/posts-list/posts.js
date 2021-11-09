@@ -38,7 +38,7 @@ export default function Posts({ allPostsData }) {
                       <h2>{title}</h2>
                     </a>
                   </Link>
-                  <ul className="article-infos">
+                  <div className="article-infos">
                     <li>
                       By{" "}
                       <Link href={""}>
@@ -52,7 +52,7 @@ export default function Posts({ allPostsData }) {
                         </a>
                       </Link>
                     </li>
-                  </ul>
+                  </div>
                 </div>
                 <Image
                   priority
