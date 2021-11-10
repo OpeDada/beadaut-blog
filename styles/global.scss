@@ -34,16 +34,6 @@ a {
   text-decoration: none;
 }
 
-// a:hover {
-//   color: #ffffff;
-//   text-decoration: underline;
-// }
-
-// img {
-//   max-width: 100%;
-//   display: block;
-// }
-
 @media screen and (min-width: 602px) {
   .white-content {
     width: 30rem;
@@ -151,5 +141,14 @@ a {
   .art-infos {
     max-width: 100%;
     font-size: 14px;
+  }
+
+  .recommend-infos {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      margin: 8px;
+    }
   }
 }
