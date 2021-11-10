@@ -107,12 +107,12 @@ export default function Post({ postData, allPostsData }) {
             <div className="recommend-infos">
               {before !== undefined && (
                 <Link href={`/posts/${allPostsData[before].id}`}>
-                  <a>{`< ${allPostsData[before].title}`}</a>
+                  <a>{`← ${allPostsData[before].title}`}</a>
                 </Link>
               )}
               {after !== undefined && (
                 <Link href={`/posts/${allPostsData[after].id}`}>
-                  <a>{`${allPostsData[after].title} >`}</a>
+                  <a>{`${allPostsData[after].title} →`}</a>
                 </Link>
               )}
             </div>
